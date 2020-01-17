@@ -70,3 +70,7 @@ About the information on the block:
 
 
 Enjoy it !
+
+## Related websites
+- [Introduction to the A* Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
+- [Red Blobn Games](https://www.redblobgames.com/)
