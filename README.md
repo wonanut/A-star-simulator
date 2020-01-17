@@ -1,6 +1,6 @@
 # A star algorithm simulator
 
-Implemented in javascript, this project helps you better understand how A* algorithm works for it **draws** how A* algorithm works step by step.
+Implemented in javascript, this project helps you better understand how A* algorithm works for it **draws** how A* algorithm works step by step. You can [click here to visit the online demo](https://wonanut.github.io/archives/A-star/)
 
 
 
