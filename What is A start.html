@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introduction of A* Algorithm</title>
+	<style type="text/css">
+		a{text-decoration: none;  color: gray}
+		li{list-style:none; float: right; padding-left: 30px;}
+		a:hover{color: #E91E63; border-bottom: 2px #E91E63 solid; transition: 0.5s; }
+		#navbar{height: 100px;}
+		#navbar-list{padding-top: 40px; padding-right: 60px; float: right;}
+	</style>
+	
+</head>
+<body onload="_initCanvas()">
+	<div id="navbar">
+			<ul id="navbar-list">
+				<li><a href="logs.html">DEVELOP LOGS</a></li>
+				<li><a id="csd" href="#" onclick="clk_showdetail()">SHOW DETAIL</a></li>
+				<li><a href="#">WHAT'S A*</a></li>
+			</ul>
+	</div>
+	<div id="content">
+		<h3>Manhattan distance</h3>
+		<p>Manhattan distance, also named L1-Distance or City Blocks distance, means the summary of two right-angle side in Cartesian coordinate system. For example, now we have two point: (x1, y1) and (x2, y2). Two points above in the same flat, so the Manhattan distance of these two points is: d = abs(x1 - x2) + abs(y1 - y2).</p>
+		<h3>Euclid distance</h3>
+		<p>Briefly speaking, Euclid distance calculates the true distance between two points, we still use the example in Mahattan distance, the Euclid distance of (x1, y1) and (x2, y2) is sqrt((x1 - x2)^2 + (y1 - y2)^2).</p>
+		<h3>What is A* ?</h3>
+		<p>In A* Algorithm, we define g(n) as the cost from start point to point N, h(n) as the cost from N to destination point. And define f(n) = g(n) + h(n).</p>
+		<img src="images/180828.jpg" style="width: 70%">
+		<h4>A*算法总结(In Chinese)</h4>
+		<p>	1. 把起点加入 open list.<br>
+			2. 重复如下过程：<br>
+			a. 遍历open list ，查找F值最小的节点，把它作为当前要处理的节点，然后移到close list中.<br>
+			b. 对当前方格的 8 个相邻方格一一进行检查，如果它是不可抵达的或者它在close list中，忽略它。否则，做如下操作：<br>
+			□  如果它不在open list中，把它加入open list，并且把当前方格设置为它的父亲;<br>
+			□  如果它已经在open list中，检查这条路径 ( 即经由当前方格到达它那里 ) 是否更近。如果更近，把它的父亲设置为当前方格，并重新计算它的G和F值。如果你的openlist是按F值排序的话，改变后你可能需要重新排序.<br>
+			c. 遇到下面情况停止搜索：<br>
+			□  把终点加入到了 open list 中，此时路径已经找到了.<br>
+			□  查找终点失败，并且open list 是空的，此时没有路径.<br>
+			3. 从终点开始，每个方格沿着父节点移动直至起点，形成路径。
+		</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{padding: 0px; margin: 0px;}
+body{width: 100%; height: 100%}
+a{text-decoration: none;  color: gray}
+li{list-style:none; float: right; padding-left: 30px;}
+a:hover{color: #E91E63; border-bottom: 2px #E91E63 solid; transition: 0.5s; }
+#navbar{height: 100px;}
+#navbar-list{padding-top: 40px; padding-right: 60px; float: right;}
+#info{background-color: #f2f2f2;}
+#update{background-color: #E91E63;}
+#modify{background-color: #63E91E;}
+#simulate{background-color: #1E63E9;}
+.tool:hover{cursor: pointer;}
+#menu{width: 0; height: 90x; overflow: hidden; box-shadow: 0 1px 1px #888,1px 0 1px #ccc;position: absolute; background-color: white}
+.menu{width: 180px; height: 30px; line-height: 30px; padding: 0 10px;}
+.menu:hover{background-color: #efefef; cursor: pointer;}
+#detail{display: none;}
+
+#toolbar{width: 50px; height: 100%; background-color: #f8f8f8; display: block; position: absolute; left: 0; top: 0; border-right: solid 1px #ddd;}
+.toolbar-unit{width: 50px; height: 30px; border-radius: 1px; margin: auto; margin-top: 5px; text-align: center; background-color: #F2F2F2;}
+.toolbar-unit p{padding-top: 4px; font-size: 10px;}
+.toolbar-unit:hover{cursor: pointer; background-color: #ddd; border-right: 3px solid #888; transition: 0.5s;}
+#tool-clear-block:{color: #DDD;}
+#tool-set-start{color: green;}
+#tool-set-end{color: red;}
+#tool-set-obstacle{color: #8B4513}
+.tool-active{border-right: 3px solid #66CC66;}
+
+#modify-message{border: 1px solid #ddd; background-color: #fff; border-radius: 3px; width: auto; font-size: 14px; padding: 5px; display: none; position: absolute; box-shadow: 1px 2px 10px #888;}
+
+td{padding-right: 20px;}
+table{margin-left: 58px; padding-left: 16px; background-color: #f2f2f2;}

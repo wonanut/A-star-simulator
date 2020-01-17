@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Magnetic Post</title>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body onload="_initCanvas()">
+	<div id="navbar">
+			<ul id="navbar-list">
+				<li><a href="logs.html">DEVELOP LOGS</a></li>
+				<li><a id="csd" href="#" onclick="clk_showdetail()">SHOW DETAIL</a></li>
+				<li><a href="What is A start.html">WHAT'S A*</a></li>
+			</ul>
+	</div>
+	<center>
+		<canvas id="can" width="1200"; height="400" onclick="clk()">This Browser does not support Canvas, sorry.</canvas>
+		<canvas id="info" width="894"; height="40">This Browser does not support Canvas, sorry.</canvas>
+		<canvas id="update" class="tool" width="98"; height="40" onclick="clk_update()"></canvas>
+		<canvas id="modify" class="tool" width="98"; height="40" onclick="clk_modify()"></canvas>
+		<canvas id="simulate" class="tool" width="98"; height="40" onclick="clk_simulate()"></canvas>
+	</center>
+
+	<div id="toolbar">
+		<div class="toolbar-unit tool-active" id="tool-pointer" title="pointer"><p>Pointer</p></div>
+		<div class="toolbar-unit" id="tool-clear-block" title="clear block"><p>Clear</p></div>
+		<div class="toolbar-unit" id="tool-set-start" title="set start"><p>Start</p></div>
+		<div class="toolbar-unit" id="tool-set-end" title="set end"><p>End</p></div>
+		<div class="toolbar-unit" id="tool-set-obstacle" title="set obstacle"><p>Obst</p></div>
+	</div>
+		
+	<div id="detail">
+		<table>
+			<tr>
+				<td>startX:</td><td><p id="sx">-1</p></td> 
+				<td>startY:</td><td><p id="sy">-1</p></td>
+				<td>endX:</td><td><p id="ex">-1</p></td> 
+				<td>endY:</td><td><p id="ey">-1</p></td>
+				<td>curX:</td><td><p id="cx">-1</p></td>
+				<td>curY:</td><td><p id="cy">-1</p></td>
+				<td>modX:</td><td><p id="mx">-1</p></td>
+				<td>modY:</td><td><p id="my">-1</p></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="modify-message">
+		<h6 id="m-list-name">adedede</h6>
+		<p id="m-f">-</p>
+		<p id="m-position">(15,8))</p>
+		<p id="m-father">(100,100)</p>
+	</div>
+
+	<!--自定义右键菜单html代码-->
+	<div id="menu">
+		<div class="menu" id="clearBlock">clear block</div>
+		<div class="menu" id="startPoint">setting as start point</div>
+		<div class="menu" id="endPoint">setting as dest point</div>
+		<div class="menu" id="obstacle">setting as obstacle</div>
+		<div class="menu" id="saveImg">save as image</div>
+	</div>
+	<script type="text/javascript" src="js/default.js"></script>
+</body>
+</html>
